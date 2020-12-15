@@ -31,3 +31,16 @@ class HhruItem(scrapy.Item):
     company_tags = scrapy.Field()
 
 
+class InstaItem(scrapy.Item):
+    _id = scrapy.Field()
+    date_parse = scrapy.Field()
+    data = scrapy.Field()
+    image_urls = scrapy.Field()
+
+
+class InstaTag(InstaItem):
+    pass
+
+
+class InstaPost(InstaItem):
+    pass

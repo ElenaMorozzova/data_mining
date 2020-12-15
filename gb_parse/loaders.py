@@ -3,6 +3,7 @@ from scrapy import Selector
 from scrapy.loader import ItemLoader
 from itemloaders.processors import TakeFirst, MapCompose
 from .items import HhruItem
+from .items import InstaItem
 # from .items import AutoYoulaItem
 
 # def get_autor(js_string):
@@ -53,3 +54,9 @@ class HhruLoader(ItemLoader):
     company_description_out = TakeFirst()
     company_tags = TakeFirst()
 
+
+class InstaLoader(ItemLoader):
+    default_item_class = InstaItem
+    date_parse = TakeFirst()
+    data = TakeFirst()
+    image_urls = TakeFirst()
