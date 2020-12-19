@@ -13,5 +13,5 @@ if __name__ == '__main__':
     crawl_settings.setmodule('gb_parse.settings')
     crawl_proc = CrawlerProcess(settings=crawl_settings)
     # crawl_proc.crawl(HhruSpider)
-    crawl_proc.crawl(InstagramSpider, login=os.getenv('LOGIN'), password=os.getenv('PASSWORD'), tag_list=['python', ])
+    crawl_proc.crawl(InstagramSpider, login=os.getenv('LOGIN'), password=os.getenv('PASSWORD'), user_list=['sevcableport', ], tag_list=['python', ])
     crawl_proc.start()

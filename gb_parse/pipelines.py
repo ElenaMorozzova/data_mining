@@ -12,7 +12,8 @@ from scrapy.pipelines.images import ImagesPipeline
 class GbParsePipeline:
     def __init__(self):
         # self.db = MongoClient()['parse_gb_hhru']
-        self.db = MongoClient()['parse_gb_insta']
+        # self.db = MongoClient()['parse_gb_insta']
+        self.db = MongoClient()['parse_gb_follower']
 
     def process_item(self, item, spider):
         if spider.db_type == 'MONGO':
