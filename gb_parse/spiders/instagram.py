@@ -2,7 +2,7 @@ import json
 import scrapy
 import datetime as dt
 from ..loaders import HhruLoader
-from ..items import InstaTag, InstaPost, InstaUser, InstaFollow
+from ..items import InstaTag, InstaPost, InstaUser, InstaFollowed
 
 
 class InstagramSpider(scrapy.Spider):

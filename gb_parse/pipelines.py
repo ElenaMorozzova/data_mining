@@ -9,6 +9,7 @@ from pymongo import MongoClient
 from scrapy import Request
 from scrapy.pipelines.images import ImagesPipeline
 
+
 class GbParsePipeline:
     def __init__(self):
         # self.db = MongoClient()['parse_gb_hhru']
